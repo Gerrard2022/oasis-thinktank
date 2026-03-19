@@ -36,7 +36,11 @@ const Gallery: React.FC = () => {
           {GALLERY_VIDEOS.map((video) => {
             const thumbnail = getYouTubeThumbnail(video.videoUrl);
             return (
-              <div key={video.id} className="flex-none w-[700px] h-[450px] liquid-glass rounded-[3rem] relative overflow-hidden group cursor-pointer border-white/5 hover:border-oasis-cyan/30 transition-all duration-500 shadow-2xl">
+              <div 
+                key={video.id} 
+                className="flex-none w-[700px] h-[450px] liquid-glass rounded-[3rem] relative overflow-hidden group cursor-pointer border-white/5 hover:border-oasis-cyan/30 transition-all duration-500 shadow-2xl"
+                onClick={() => window.open(video.videoUrl, '_blank')}
+              >
                  <div className="absolute inset-0 bg-oasis-teal/10 opacity-50 group-hover:opacity-100 group-hover:bg-oasis-teal/20 transition-all duration-500" />
                  
                  {/* YouTube Thumbnail Background */}

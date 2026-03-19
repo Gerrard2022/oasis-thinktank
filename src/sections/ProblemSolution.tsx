@@ -10,19 +10,26 @@ const ProblemSolution: React.FC = () => {
             scrollTrigger: {
               trigger: sectionContainer.current,
               start: "top top",
-              end: "+=200%",
+              end: "+=300%",
               pin: true,
               scrub: 1,
             }
           });
       
           psTl.to(".problem-content", { xPercent: -100, opacity: 0, ease: "none" })
-              .fromTo(".solution-content", 
+              .fromTo(".mission-content", 
                 { xPercent: 100, opacity: 0, pointerEvents: "none" },
                 { xPercent: 0, opacity: 1, pointerEvents: "auto", ease: "none" }, 
                 "<"
               )
-              .to(sectionContainer.current, { backgroundColor: "#072e33", ease: "none" }, "<");
+              .to(sectionContainer.current, { backgroundColor: "#072e33", ease: "none" }, "<")
+              .to(".mission-content", { xPercent: -100, opacity: 0, pointerEvents: "none", ease: "none" }, "+=0.5")
+              .fromTo(".solution-content",
+                { xPercent: 100, opacity: 0, pointerEvents: "none" },
+                { xPercent: 0, opacity: 1, pointerEvents: "auto", ease: "none" },
+                "<"
+              )
+              .to(sectionContainer.current, { backgroundColor: "#05161a", ease: "none" }, "<");
     }, { scope: sectionContainer });
 
     return (
@@ -34,6 +41,15 @@ const ProblemSolution: React.FC = () => {
             Low girls participation in school caused by <span className="italic text-white/20">drop-outs.</span>
           </h3>
           <p className="text-xl text-white/40 mt-8 max-w-2xl font-light">Identifying and addressing the core barriers preventing young women from completing their education.</p>
+        </div>
+
+        {/* Mission State */}
+        <div className="mission-content container mx-auto px-10 absolute text-center flex flex-col items-center opacity-0 pointer-events-none">
+          <h2 className="text-oasis-cyan text-sm tracking-[0.5em] uppercase mb-6 font-bold font-heading">Our Mission</h2>
+          <h3 className="text-4xl md:text-6xl font-bold max-w-4xl mx-auto leading-tight text-white font-heading tracking-tighter">
+            To <span className="text-oasis-gold drop-shadow-[0_0_15px_rgba(255,184,76,0.3)]">improve education for Dropout</span> between the age of 12-18 in Tanzania.
+          </h3>
+          <div className="w-24 h-1 bg-gradient-to-r from-transparent via-oasis-gold to-transparent mt-8"></div>
         </div>
 
         {/* Solution State */}

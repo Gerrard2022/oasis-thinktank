@@ -2,42 +2,42 @@ export const TEAM_MEMBERS = [
   {
     name: "Gwiza Tysha",
     role: "Team Leader",
-    description: "",
+    description: "Visionary leader driving the Oasis mission.",
     initial: "T",
     image: "/images/tysha.jpeg"
   },
   {
     name: "Mucyo Gad",
-    role: "",
-    description: "",
+    role: "ThinkTank Coordinator",
+    description: "Coordinates the entire groups to help us achieve our goals.",
     initial: "M",
     image: "/images/gad.jpeg"
   },
   {
     name: "KABERUKA Gerard",
-    role: "",
-    description: "",
+    role: "Editor",
+    description: "Edits Oasis videos.",
     initial: "G",
     image: "/images/gerard.jpeg"
   },
   {
     name: "Gloria Ange",
-    role: "",
-    description: "",
+    role: "ThinkTank Coordinator",
+    description: "Coordinates the entire groups to help us achieve our goals.",
     initial: "G",
     image: "/images/angel.jpeg"
   },
   {
     name: "Gervais Plamedi",
-    role: "",
-    description: "",
+    role: "ThinkTank Videographer",
+    description: "Records Oasis video content.",
     initial: "G",
     image: "/images/plamedi.jpeg"
   },
   {
     name: "Hamad Afraah",
-    role: "",
-    description: "",
+     role: "ThinkTank Coordinator",
+    description: "Coordinates the entire groups to help us achieve our goals.",
     initial: "H",
     image: "/images/afraah.jpeg"
   }
